@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <form action="/process" method="POST">
+                <div class="row">
+                    <div class="block">
+                        <h4>Your Name:</h4>
+                    </div>
+                    <div class="block">
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="block">
+                        <h4>Dojo Location</h4>
+                    </div>
+                    <div class="block">
+                        <select name="location" id="location">
+                            <option value="Seattle">Seattle</option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="San Fransisco">San Fransisco</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="block">
+                        <h4>Favorite Language:</h4>
+                    </div>
+                    <div class="block">
+                        <select name="language" id="language">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="C#">C#</option>
+                            <option value="Java">Java</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Comments (optional):</h4>
+                </div>
+                <div class="row">
+                    <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+                </div>
+                <div class="row">
+                    <button class="btn" type="submit">Submit</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
